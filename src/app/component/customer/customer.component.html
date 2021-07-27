@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of customers">{{item | json}}
+         <!-- <button [routerLink]="['/edit/',item.id]" >Details</button> -->
+         <button routerLink="/edit/{{item.id}}" >Edit</button>
+         <button routerLink="/delete/{{item.id}}">Delete</button>
+        </li>
+</ul>
